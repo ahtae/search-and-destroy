@@ -20,6 +20,9 @@ describe('Binary Search', () => {
 		expect(binarySearch(test3, 4)).to.equal(false);
 	});
 
-	//(OPTIONAL) WRITE YOUR OWN TESTS HERE. Include >=1 edge case :)
-
+	it('returns false if array length is >=1 ', () => {
+		expect(binarySearch([], 25)).to.equal(false);
+		expect(binarySearch([25], 25)).to.equal(true);
+		expect(binarySearch([4], 25)).to.equal(false);
+	});
 });
