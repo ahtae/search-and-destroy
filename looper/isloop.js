@@ -17,7 +17,7 @@ const isLoop = (linkedlist) => {
   let currentNode = linkedlist.head
   while (currentNode.next) {
     if (nodeMap[currentNode.next.value]) {
-      return true
+      return currentNode
     } else {
       nodeMap[currentNode.value] = currentNode.value
 
